@@ -1,5 +1,7 @@
 # 📚 Library Management System (IBM i Training Project)
 
+![Architecture Diagram](architecture.png)
+
 A specialized inventory and membership management system designed on **IBM i (AS/400)**, focusing on relational data integrity and library circulation logic.
 
 ## 🚀 Key Features
@@ -25,6 +27,7 @@ A specialized inventory and membership management system designed on **IBM i (AS
 │   └── BOOK_CIRC.rpgle # Circulation logic module
 ├── QCLSRC/
 │   └── INIT_PGM.clle   # Initial environment setup
+├── architecture.png    # High-level architecture diagram (Grayscale)
 └── README.md
 ```
 
