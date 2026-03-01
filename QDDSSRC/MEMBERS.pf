@@ -1,0 +1,8 @@
+      *-- MEMBERS Physical File
+     A                                      UNIQUE
+     A          R RMEMB
+     A            MEMID         10A         TEXT('Member ID')
+     A            NAME          30A         TEXT('Member Name')
+     A            JOIN_DATE      L         TEXT('Date Joined')
+     A            ACTIVE         1A         TEXT('Y/N')
+     A          K MEMID

@@ -1,0 +1,17 @@
+/*------------------------------------------------------------*/
+/* LIBRARY SYSTEM INITIAL SETUP AND DRIVER                    */
+/*------------------------------------------------------------*/
+             PGM
+
+             DCL        VAR(&USRLIB) TYPE(*CHAR) LEN(10) VALUE('LIBRARYLIB')
+
+             /* SETUP LIBRARY LIST */
+             ADDLIBLE   LIB(&USRLIB)
+             MONMSG     MSGID(CPF2103) /* IGNORE IF ALREADY EXISTS */
+
+             /* CALL MAIN CIRCULATION ENGINE */
+             CALL       PGM(BOOK_CIRC)
+
+             RMVLIBLE   LIB(&USRLIB)
+
+             ENDPGM

@@ -1,0 +1,9 @@
+      *-- BOOKS Physical File
+     A                                      UNIQUE
+     A          R RBOOK
+     A            BOOKID        10A         TEXT('Book ID')
+     A            TITLE         50A         TEXT('Book Title')
+     A            AUTHOR        30A         TEXT('Author Name')
+     A            STATUS         1A         TEXT('A=Available, O=Out')
+     A            QTY            5S 0       TEXT('Quantity in Stock')
+     A          K BOOKID
